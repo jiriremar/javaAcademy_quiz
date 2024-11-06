@@ -7,8 +7,8 @@ public class QuizMath {
     private String answerThird;
     private int correctAnswer = 0;
 
-    public void question() {
-        System.out.println("1. What is 2 + 2? (Question with single answer, insert alphabet character)");
+    public void question(String name) {
+        System.out.println("\n1. What is 2 + 2? (Question with single answer, insert alphabet character)");
         System.out.println("a. 5");
         System.out.println("b. 4");
         System.out.print("Answer: ");
@@ -49,6 +49,6 @@ public class QuizMath {
             correctAnswer++;
         }
         System.out.println(answerThird + " (user input)");
-        System.out.println("\nCorrect answer " + correctAnswer + "/3");
+        System.out.println("\n" + name.toUpperCase() +", you have " + correctAnswer + "/3 answers correctly.");
     }
 }

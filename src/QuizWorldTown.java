@@ -7,8 +7,8 @@ public class QuizWorldTown {
     private String answerThird;
     private int correctAnswer = 0;
 
-    public void question() {
-        System.out.println("1. What is the capital city of Germany? (Question with single answer, insert alphabet character)");
+    public void question(String name) {
+        System.out.println("\n1. What is the capital city of Germany? (Question with single answer, insert alphabet character)");
         System.out.println("a. Prague");
         System.out.println("b. Kodan");
         System.out.println("c. Berlin");
@@ -51,7 +51,7 @@ public class QuizWorldTown {
             correctAnswer++;
         }
         System.out.println(answerThird + " (user input)");
-        System.out.println("\nCorrect answer " + correctAnswer + "/3");
+        System.out.println("\n" + name.toUpperCase() +", you have " + correctAnswer + "/3 answers correctly");
     }
 
 }
